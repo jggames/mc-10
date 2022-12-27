@@ -148,6 +148,12 @@
                     <a class="github-button" href="https://github.com/mtinnes/mc-10"
                         aria-label="Star mtinnes/mc-10 on GitHub">Star</a>
                 </p>
+				<h3>
+					Hosted by
+				</h3>
+				<p>
+					<a href="http://faculty.cbu.ca/jgerrie/Home/Type-in-Mania.html">James Gerrie</a>
+				</p>
             </div>
             <div class="babble">
                 <h3>
@@ -498,7 +504,7 @@
 
         function loadCassette() {
             var xhr = new XMLHttpRequest();
-            xhr.open("GET", "/cassettes/" + $("#cassetteList").val().toUpperCase(), true);
+            xhr.open("GET", "./cassettes/" + $("#cassetteList").val().toUpperCase(), true);
             xhr.responseType = "arraybuffer";
             xhr.onload = function (e) {
                 if (this.status == 200) {
